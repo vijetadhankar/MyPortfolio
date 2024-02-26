@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'serif';
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    /* background: linear-gradient(to bottom right, rgba(193, 186, 186, 0.9), rgba(244, 242, 246, 0.8), rgba(195, 20, 50, 0.9)); */
+
+}
+
+.home {
+    width: 100%;
+    height: 200%;
+    /* background-color: rgb(13, 13, 13); */
+
+    font-weight: 600;
+    color: rgb(249, 244, 244);
+}
+
+.home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    /* Set position to relative */
+    overflow: hidden;
+    /* Hide overflowing animations */
+}
+
+/* Animation for background pseudo-elements */
+.home::before,
+.home::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Animation for background pseudo-element before */
+.home::before {
+
+    background: linear-gradient(to bottom right, #ffb2ff, #ffd1ff, #e2e2e2);
+    z-index: -1;
+    /* animation: gradientAnimation 10s linear infinite alternate; */
+    /* Apply animation */
+}
+
+/* Animation for background pseudo-element after */
+.home::after {
+    background: linear-gradient(to bottom right, #ffb2ff,
+            #ffd1ff,
+            #e2e2e2);
+    z-index: -1;
+    /* animation: radialGradientAnimation 10s linear infinite alternate; */
+    /* Apply animation */
+}
+
+/* Keyframes for linear gradient animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Keyframes for radial gradient animation */
+@keyframes radialGradientAnimation {
+    0% {
+        background-size: 150% 150%;
+    }
+
+    100% {
+        background-size: 100% 100%;
+    }
+}
+
+
+
+
+
+
+
+.home-content {
+    /* display: flex;
+    justify-content: space-between; */
+
+    width: 100%;
+    /* Adjust the width of the content area */
+
+    /* Set a maximum width if needed */
+    padding: 30px;
+    /* Add padding around the content */
+}
+
+.home-content {
+
+    /* position: relative; */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    /* background-color: #333; */
+
+    /* Add margin to the right */
+}
+
+.image-content {
+    position: relative;
+    /* background-color: #0b03f6; */
+    width: 50%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Set position to relative */
+}
+
+.image-content img {
+
+
+    /* margin-left: 500px; */
+    /* Ensure image does not exceed its container */
+    height: 90%;
+    /* Maintain aspect ratio */
+    border-radius: 10%;
+
+    /* Add rounded corners to the image */
+    box-shadow: 20px 20px 20px rgba(237, 235, 238, 0.3);
+    /* Add box shadow */
+    transition: transform 0.3s ease;
+
+    /* Add transition for smooth scaling */
+}
+
+.image-content:hover img {
+    transform: scale(1.1);
+    /* Scale up the image on hover */
+}
+
+/* .image-content::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    /* Adjust the position */
+/* left: -10px; */
+/* Adjust the position */
+/* right: -10px; */
+/* Adjust the position */
+/* bottom: -10px; */
+/* Adjust the position */
+/* border: 2px solid #1507ac; */
+/* Add border */
+/* border-radius: 50%; */
+/* Add rounded border */
+/* z-index: -1; */
+/* Set z-index to be behind the image */
+/* animation: pulsate 2s infinite alternate; */
+/* Add pulsating animation */
+/* } */
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+
+
+
+
+/* Hover effect for h2 tag */
+.text-content h2:hover {
+    animation: fadeIn 0.5s ease forwards;
+    /* Apply animation on hover */
+}
+
+/* Animation for h3 tag */
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+        color: #a3e9e7;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        color: #4a9bc6;
+    }
+}
+
+/* Hover effect for h3 tag */
+.text-content h3:hover {
+    animation: slideInLeft 0.5s ease forwards;
+    /* Apply animation on hover */
+}
+
+/* Animation for h4 tag */
+@keyframes rotateIn {
+    0% {
+        opacity: 0;
+        transform: rotate(-90deg);
+        color: #999;
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(0);
+        color: #2d9fb3;
+    }
+}
+
+/* Hover effect for h4 tag */
+.text-content h4:hover {
+    animation: rotateIn 0.5s ease forwards;
+    /* Apply animation on hover */
+}
+
+/* Animation for p tag */
+@keyframes scaleIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+        color: #555;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        color: #6d6ba9;
+    }
+}
+
+/* Hover effect for p tag */
+.text-content p:hover {
+    animation: scaleIn 0.5s ease forwards;
+    /* Apply animation on hover */
+}
+
+#education {
+    text-align: center;
+    text-decoration: dashed;
+    font-weight: 600;
+    font-size: 40px;
+    margin: 10px;
+
+}
+
+#myCarousel .container {
+    background-color: #b1e1d2;
+}
+
+
+
+.carousel.slide {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner {
+    background-color: #b1e1d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 80vw;
+    margin-left: 70px;
+}
+
+.carousel-inner .item.active {
+    opacity: 1;
+}
+
+.carousel-indicators {
+    bottom: 20px;
+}
+
+.item {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 60%;
+    height: 60%;
+    opacity: 1;
+    border-radius: 40px;
+    overflow: hidden;
+    /* position: relative; */
+    background-color: #e2e2e2;
+    /* Ensure proper positioning */
+}
+
+.inneritem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 70%;
+    border-radius: 40px;
+    background-color: #fcfcfc;
+    /* padding: 20px; */
+    border-radius: 40px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    margin-left: 85px;
+    margin-top: 30px;
+    animation: fadeIn 1s ease forwards;
+}
+
+.inneritem {
+    animation: slideIn 1s ease forwards;
+}
+
+
+
+
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: cursive;
+    color: black;
+    text-align: center;
+}
+
+/* Animation keyframes */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    .item {
+        padding: 10px;
+    }
+
+
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 8px;
+    }
+
+    .image-content img {
+        height: 50%;
+        width: 50%;
+
+    }
+
+    .carousel-inner {
+        height: 50%;
+        width: 100%;
+        margin-left: 35px;
+    }
+
+    .item {
+        width: 70%;
+        height: 40%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inneritem {
+        height: 60%;
+        width: 70%;
+        border-radius: 20px;
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+        margin-left: 35px;
+        margin-top: 15px;
+
+    }
+
+    #education {
+        font-size: 20px;
+        margin: 5px;
+
+    }
+
+    .carousel-control .glyphicon-chevron-left {
+        right: 25%;
+        margin-right: -20px;
+        top: 50%;
+
+        display: inline-block;
+        margin-top: -200px;
+
+    }
+
+    .carousel-control .glyphicon-chevron-right {
+        right: 25%;
+        margin-right: -20px;
+        top: 50%;
+
+        display: inline-block;
+        margin-top: -200px;
+
+    }
+}
+
+
+
+
+.inneritem:hover {
+    background-color: #9ccfff;
+}
+
+
+
+
+
+/* Adjusted styles for left and right controls */
+.carousel-control {
+    z-index: 2;
+    /* Ensure controls are above carousel items */
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+    /* Remove default background image */
+}
+
+.carousel-control.left span,
+.carousel-control.right span {
+    color: #fff;
+    /* Change control color */
+    font-size: 20px;
+    /* Adjust font size */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* Add background color with transparency */
+    /* border-radius: 50%; */
+    /* Make control buttons circular */
+    /* padding: 10px 12px; */
+    /* Add padding */
+}
+
+.carousel-control.left {
+    left: 60px;
+    top: 890px;
+    /* Position left control */
+}
+
+.carousel-control.right {
+    right: 60px;
+    top: 890px;
+    /* Position right control */
+}
+
+@media (max-width: 768px) {
+
+    .navbar-header,
+    .navbar-nav {
+        float: none;
+    }
+
+    .navbar-nav {
+        margin-top: 7.5px;
+    }
+
+
+
+    .navbar-right>li {
+        float: none;
+        display: inline-block;
+        width: auto;
+        /* Adjust width as needed */
+        margin-right: 5px;
+        /* Add some spacing between list items */
+    }
+
+    .navbar-right>li>a {
+        font-size: 1rem;
+        /* Adjust font-size as needed */
+    }
+}

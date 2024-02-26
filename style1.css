@@ -1,0 +1,256 @@
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+    background-color: #b8d2d6;
+}
+
+#heading {
+    text-align: center;
+    text-decoration: dashed;
+    font-weight: 600;
+    font-size: 40px;
+    margin: 10px;
+}
+
+#primg {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#primg1 {
+    height: 90px;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+
+}
+
+#text {
+    font-weight: 600;
+    padding: 10px;
+}
+
+.card {
+    width: 400px;
+    height: 400px;
+    /* perspective: 1000px; */
+}
+
+.card-inner {
+    width: 70%;
+    height: 75%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+    background-color: #a2cbbe;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+
+.card-front {
+    background-color: #b4b5c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-back {
+    background-color: #fdefff;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+    width: 40px;
+    border-radius: 5px;
+    color: #101010;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+@media screen and (max-width: 768px) {
+    #heading {
+        font-size: 30px;
+        /* Decrease font size on smaller screens */
+    }
+
+    #primg {
+        height: 80px;
+        /* Decrease image height */
+        width: 80px;
+        /* Decrease image width */
+    }
+
+    #primg1 {
+        height: 70px;
+        /* Decrease image height */
+        width: 80px;
+        /* Decrease image width */
+    }
+
+    #text {
+        font-size: 10px;
+        /* Decrease text font size */
+    }
+
+    h1,
+    a {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #heading {
+        font-size: 10px;
+        /* Further decrease font size on smaller screens */
+    }
+
+    #primg {
+        height: 30px;
+        /* Further decrease image height */
+        width: 30px;
+        /* Further decrease image width */
+    }
+
+    #primg1 {
+        height: 30px;
+        /* Further decrease image height */
+        width: 30px;
+        /* Further decrease image width */
+    }
+
+    #text {
+        font-size: 5px;
+        /* Further decrease text font size */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container1 {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        align-content: center;
+        /* Change to column layout on smaller screens */
+        /* align-items: center; */
+        /* Center items */
+    }
+
+    .card {
+        width: 90%;
+        /* Take up 90% of the width */
+        max-width: 300px;
+        /* Limit maximum width */
+        height: 90%;
+        /* Let height adjust according to content */
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* Add some spacing between cards */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        max-width: 250px;
+        height: 90%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* Further limit maximum width */
+    }
+
+    .container1 {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        /* Change to column layout on smaller screens */
+        /* align-items: center; */
+        /* Center items */
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .card-front,
+    .card-back {
+        /* width: 90%; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* transform: rotateY(180deg); */
+        /* Take up 90% of the width */
+        height: 100%;
+        width: 50%;
+        transition: transform 0.6s, background-color 0.3s;
+        /* Limit maximum width */
+        /* margin: 0 auto; */
+        /* Center the card horizontally */
+    }
+
+    button {
+
+
+        width: 20px;
+        border-radius: 0.7px;
+        color: #101010;
+        font-size: .5rem;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .card-front,
+    .card-back {
+        max-width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+        transition: transform 0.6s, background-color 0.3s;
+        /* transform: rotateY(180deg); */
+        /* Further limit maximum width */
+    }
+
+    button {
+
+
+        width: 20px;
+        border-radius: 0.7px;
+        color: #101010;
+        font-size: .5rem;
+
+    }
+}

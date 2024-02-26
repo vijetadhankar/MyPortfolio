@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="c.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Know Me</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#home">About</a></li>
+                <li><a href="#1">Education</a></li>
+                <li><a href="#Skill-Panel">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a
+                        href="https://drive.google.com/file/d/1ftWV2XAwkUMf2VcbKf0AKnp4RWn7d3BK/view?usp=drive_link">Resume</a>
+                </li>
+                <li><a href="#contactme">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div id="home" class="home">
+        <div class="home-content">
+
+            <h2>Let's connect and build something amazing
+                together!</h2>
+
+            <p>Hey there! I'm <span
+                    style="font-style:oblique; font-weight: bolder;font-size: 20px ; color: rgba(0, 0, 0, 0.646); text-decoration: underline; ">Vijeta</span>,
+                a
+                passionate
+                frontend engineer with a
+                knack for crafting engaging
+                user
+                experiences. With a
+                strong foundation in HTML, CSS, and JavaScript, I thrive on turning design concepts into elegant,
+                interactive web
+                applications.</p>
+            <p>What truly excites me is the opportunity to collaborate with talented designers and backend developers to
+                bring creative
+                visions to life. Whether it's optimizing performance, ensuring cross-browser compatibility, or
+                implementing responsive
+                designs, I approach each project with meticulous attention to detail and a commitment to delivering
+                high-quality <br>
+                solutions.</p>
+            <p>Beyond coding, I'm a firm believer in the power of continuous learning and staying updated with the
+                latest industry
+                trends and best practices. I enjoy attending tech meetups, participating in online communities, and
+                exploring new tools
+                and technologies that can enhance my craft.</p>
+            <p>When I'm not busy coding, you can find me exploring the great outdoors, experimenting with new recipes in
+                the kitchen,
+                or losing myself in a good book. I'm always up for a challenge and eager to collaborate on exciting
+                projects that push
+                the boundaries of what's possible on the web.</p>
+
+        </div>
+        <div class="image-content">
+            <img src="vijeta.jpg" alt="Vijeta's photo">
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- Education -->
+    <div id="edu" class="container">
+
+        <div id="myCarousel" class="carousel ">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+
+            <h1 id="education">EDUCATION</h1>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+
+                <div class="item active">
+                    <div class="inneritem">
+                        <h1> Education Type :Graduation</h1>
+                        <p>cgpa:8.2</p>
+
+                        <h2> Institute Name:Ch. Devi Lal State Institute of Engineering & Technology.</h2>
+                        <p>Btech/cse</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="inneritem">
+                        <h1>Education Type :12th</h1>
+                        <p>Percentage:88%</p>
+
+                        <h2>School Name : Rawal Convent School</h2>
+                        <p>Location:Faridabad</p>
+
+                        <p>Stream:Non-Medical</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="inneritem">
+                        <h1>Education Type :10th</h1>
+                        <p>CGPA:9.8</p>
+
+                        <h2>School Name : Rawal Convent School</h2>
+                        <p>Location:Faridabad</p>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div>
+    </div>
+
+    <!-- projects -->
+    <h1 id="heading">PROJECTS</h1>
+    <div id="projects" class="container1">
+
+        <div class="card" id="card">
+            <div class="card-inner" id="card-inner">
+                <div class="card-front">
+                    <img src="download.jpeg" alt="" id="primg">
+                    <br>
+                    <p id="text">Know Me:A portfolio webite . <br> Tech Stack Used: <br>HTML <br> CSS <br> Bootstrap3
+                        <br>
+                        JavaScript
+                    </p>
+                    <button onclick="flipCard()">Flip</button>
+                </div>
+                <div class="card-back">
+                    <h1>Git Hub link:</h1>
+                    <a href="#">Link to something</a>
+                    <button onclick="flipCard()">Flip</button>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card">
+            <div class="card-inner" id="card-inner">
+                <div class="card-front">
+                    <img src="shop.jpeg" alt="" id="primg1">
+                    <p id="text"> ShopRizz: An Ecommerce website. <br> Tech Stack Used: <br>HTML , CSS
+                        <br> Bootstrap3
+                        <br>
+                        JavaScript
+                    </p>
+                    <button onclick="flipCard()">Flip</button>
+                </div>
+                <div class="card-back">
+                    <h1>Git Hub link:</h1>
+                    <a href="#">Link to something</a>
+                    <button onclick="flipCard()">Flip</button>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card">
+            <div class="card-inner" id="card-inner">
+                <div class="card-front">
+                    <img src="gamezone.jpeg" alt="" id="primg1">
+                    <p id="text"> Mini Game Zone Website. <br> Tech Stack Used: <br>HTML , CSS
+                        <br> Bootstrap3
+                        <br>
+                        JavaScript
+                    </p>
+                    <button onclick="flipCard()">Flip</button>
+                </div>
+                <div class="card-back">
+                    <h1>Git Hub link:</h1>
+                    <a href="#">Link to something</a>
+                    <button onclick="flipCard()">Flip</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- skills -->
+    <h1 id="heading">MY Skills </h1>
+
+
+
+
+    <div id='Skill-Panel' class='panel'>
+
+        <div class='skill-wrapper'>
+            <div id='languages' class='skill-container'>
+                <H4 class='skill-category'>Languages:</H4>
+                <ul class='skill-list'>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>React Js</li>
+                    <li>DSA</li>
+                    <li>C++</li>
+                    <li>OOPS</li>
+
+                </ul>
+            </div>
+            <div id='soft-skills' class='skill-container'>
+                <H4 class='skill-category'>Soft-Skills:</H4>
+                <ul class='skill-list'>
+                    <li>Positive, Friendly Attidtude!</li>
+                    <li>Good Written/Verbal Communication</li>
+                    <li>Good Interpersonal Skills</li>
+                    <li>Strong Work Ethic</li>
+                </ul>
+            </div>
+            <div id='tools' class='skill-container'>
+                <H4 class='skill-category'>Version Control and IDE:</H4>
+                <ul class='skill-list'>
+                    <li>React</li>
+                    <li>VsCode</li>
+                    <li>Github</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- contactpage -->
+
+    <section class="contact" id="contactme">
+        <div class="contact-header">
+            <h3 id="co-title">Contact Me</h3>
+            <h1 id="co-text">Reach out for a new project or to say hello</h1>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-form">
+                <h3 id="form-title">Send me a message</h3>
+                <form action="vijetadhankar11@gmail.com" method="post" enctype="text/plain">
+                    <fieldset>
+                        <div class="form-field">
+                            <input name="name" type="text" id="name" placeholder="Your Name"></input>
+                        </div>
+                        <div class="form-field">
+                            <input name="email" type="email" id="email" placeholder="Your Email"></input>
+                        </div>
+                        <div class="form-field">
+                            <input name="Subject" type="text" id="subject" placeholder="Subject"></input>
+                        </div>
+                        <div class="form-field">
+                            <textarea name="message" type="text" id="message" placeholder=" Message"></textarea>
+                        </div>
+                    </fieldset>
+                    <!-- <input id="form-btn1" type="submit" value="send"> -->
+                </form>
+                <input id="form-btn" type="submit" value="send">
+            </div>
+
+            <div class="contact-info">
+                <h3>Email Me At </h3>
+                <a href="mailto:vijetadhankar11@gmail.com">
+                    <p>vijetadhankar11@gmail.com</p>
+                </a>
+                <h3>Find Me On </h3>
+                <div class="contact-links1">
+                    <a href="https://www.linkedin.com/in/vijeta-dhankar-b77612225"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/vijetadhankar"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/ivijetadhankar/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>

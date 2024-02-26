@@ -1,0 +1,251 @@
+/* #Skill-Panel {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    align-items: center; */
+/* justify-content: space-evenly; */
+
+
+
+/* .skill-wrapper {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* .skill-container {
+    text-align: center;
+    font-size: 1.5vw;
+    height: 100vh;
+    width: 0%;
+    margin: auto;
+    margin-bottom: 5vh;
+    /* background-color: black;
+    border-radius: 10px; */
+/* overflow: none; */
+#heading {
+    text-align: center;
+    text-decoration: dashed;
+    font-weight: 600;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7a83a5;
+    /* background: linear-gradient(to bottom right, #8189ab,
+            #d8c8f1,
+            #b2adc4); */
+}
+
+.skill-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.skill-container {
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    /* background: linear-gradient(to bottom right, #8189ab,
+            #d8c8f1,
+            #b2adc4); */
+    /* background-color: #f0f0f0; */
+    border-radius: 5px;
+}
+
+
+
+
+.skill-category {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    border-bottom: 3px solid;
+}
+
+.skill-list {
+    max-height: 100%;
+    width: 40%;
+    text-align: left;
+    overflow: none;
+    font-size: 2vh;
+    margin-top: 1vh;
+}
+
+
+
+ul {
+    display: inline-block;
+}
+
+
+/* Define animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Style the skill container */
+.skill-container {
+    background-color: #e8ccea;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease-in-out;
+    transition: transform 0.3s step-end;
+}
+
+/* Style the skill category */
+.skill-category {
+    color: #333;
+    margin-bottom: 10px;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+/* Style the skill list */
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-gap: 4px;
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));  */
+}
+
+/* Style individual skills */
+.skill-list li {
+    margin-bottom: 5px;
+    color: #080808;
+    font-size: 18px;
+    animation: slideIn 0.5s ease forwards;
+    transition: background-color 0.3s ease, transform 0.6s ease-out;
+    cursor: pointer;
+    transform-origin: center;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+/* Different animation on skill list */
+.skill-list li:nth-child(odd) {
+    animation: slideInAlternate 0.7s ease-in-out;
+}
+
+@keyframes slideInAlternate {
+    from {
+        transform: translateY(20px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Alternate background colors for list items */
+.skill-list li:nth-child(even) {
+    background-color: #eaeaea;
+}
+
+/* Alternate background colors for list items */
+.skill-list li:nth-child(even) {
+    background-color: #eaeaea;
+}
+
+/* Hover effect */
+.skill-list li:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+
+@media screen and (min-width: 960px) {
+    .skill-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .panel {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .skill-wrapper {
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .skill-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .skill-wrapper {
+        width: 90%;
+    }
+
+    .panel {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skill-list {
+        font-size: 8px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .skill-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .skill-wrapper {
+        width: 90%;
+    }
+
+    .skill-container {
+        padding: 15px;
+    }
+
+    .skill-category {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+
+    .skill-list li {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}
