@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'serif';
+    font-family: "Source Sans Pro", "Arial", sans-serif;
 }
 
 html,
@@ -47,7 +47,7 @@ body {
 /* Animation for background pseudo-element before */
 .home::before {
 
-    background: linear-gradient(to bottom right, #ffb2ff, #ffd1ff, #e2e2e2);
+    background: linear-gradient(to bottom right, #dedbde, #aaa0aa, #e2e2e2);
     z-index: -1;
     /* animation: gradientAnimation 10s linear infinite alternate; */
     /* Apply animation */
@@ -55,8 +55,8 @@ body {
 
 /* Animation for background pseudo-element after */
 .home::after {
-    background: linear-gradient(to bottom right, #ffb2ff,
-            #ffd1ff,
+    background: linear-gradient(to bottom right, #d2cbd2,
+            #b4acb4,
             #e2e2e2);
     z-index: -1;
     /* animation: radialGradientAnimation 10s linear infinite alternate; */
@@ -150,26 +150,7 @@ body {
     /* Scale up the image on hover */
 }
 
-/* .image-content::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    /* Adjust the position */
-/* left: -10px; */
-/* Adjust the position */
-/* right: -10px; */
-/* Adjust the position */
-/* bottom: -10px; */
-/* Adjust the position */
-/* border: 2px solid #1507ac; */
-/* Add border */
-/* border-radius: 50%; */
-/* Add rounded border */
-/* z-index: -1; */
-/* Set z-index to be behind the image */
-/* animation: pulsate 2s infinite alternate; */
-/* Add pulsating animation */
-/* } */
+
 @keyframes pulsate {
     0% {
         transform: scale(1);
@@ -263,7 +244,7 @@ body {
 }
 
 #myCarousel .container {
-    background-color: #b1e1d2;
+    background-color: #9eafa9;
 }
 
 
@@ -274,7 +255,7 @@ body {
 }
 
 .carousel-inner {
-    background-color: #b1e1d2;
+    background-color: #ecf2f0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -341,7 +322,8 @@ h2 {
 p {
     font-size: 15px;
     font-weight: 700;
-    font-family: cursive;
+    font-family: sans-serif;
+
     color: black;
     text-align: center;
 }
@@ -377,7 +359,7 @@ p {
 
     .image-content img {
         height: 50%;
-        width: 50%;
+
 
     }
 
@@ -418,17 +400,17 @@ p {
         top: 50%;
 
         display: inline-block;
-        margin-top: -200px;
+        margin-top: -40px;
 
     }
 
     .carousel-control .glyphicon-chevron-right {
         right: 25%;
-        margin-right: -20px;
+        margin-right: -80px;
         top: 50%;
 
         display: inline-block;
-        margin-top: -200px;
+        margin-top: -40px;
 
     }
 }
@@ -461,13 +443,7 @@ p {
     color: #fff;
     /* Change control color */
     font-size: 20px;
-    /* Adjust font size */
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    /* Add background color with transparency */
-    /* border-radius: 50%; */
-    /* Make control buttons circular */
-    /* padding: 10px 12px; */
-    /* Add padding */
+
 }
 
 .carousel-control.left {
@@ -491,6 +467,14 @@ p {
 
     .navbar-nav {
         margin-top: 7.5px;
+    }
+
+    .navbar-fixed-bottom,
+    .navbar-fixed-top {
+
+
+        z-index: 1;
+        position: sticky;
     }
 
 

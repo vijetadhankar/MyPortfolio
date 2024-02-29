@@ -4,7 +4,7 @@
     justify-content: center;
     width: 100%;
     height: 90%;
-    background-color: #b8d2d6;
+    background-color: #ebf1f2;
 }
 
 #heading {
@@ -73,7 +73,7 @@
 }
 
 .card-back {
-    background-color: #fdefff;
+    background-color: #e4dfe5;
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
