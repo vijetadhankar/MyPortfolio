@@ -353,8 +353,9 @@ p {
         font-size: 16px;
     }
 
-    p {
-        font-size: 4px;
+    #para {
+        font-size: 0.6rem;
+        text-transform: capitalize;
     }
 
     .image-content img {
@@ -458,7 +459,7 @@ p {
     /* Position right control */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
     .navbar-header,
     .navbar-nav {
@@ -493,8 +494,14 @@ p {
         /* Adjust font-size as needed */
     }
 
-    #home {
+    #home1 {
         font-size: 1rem;
+        text-transform: uppercase;
+        margin-top: 150px;
 
+    }
+
+    .home {
+        height: 90%;
     }
 }
