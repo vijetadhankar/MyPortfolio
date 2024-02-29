@@ -354,7 +354,7 @@ p {
     }
 
     p {
-        font-size: 8px;
+        font-size: 4px;
     }
 
     .image-content img {
@@ -473,8 +473,8 @@ p {
     .navbar-fixed-top {
 
 
-        z-index: 1;
-        position: sticky;
+
+        position: absolute;
     }
 
 
@@ -491,5 +491,10 @@ p {
     .navbar-right>li>a {
         font-size: 1rem;
         /* Adjust font-size as needed */
+    }
+
+    #home {
+        font-size: 1rem;
+
     }
 }
