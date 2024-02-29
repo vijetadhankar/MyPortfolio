@@ -221,9 +221,7 @@ a {
     button {
 
 
-        width: 150px;
-        border-radius: 0.7px;
-        width: 90px;
+        width: 80px;
         border-radius: 4px;
         color: #101010;
         font-size: 1rem;
